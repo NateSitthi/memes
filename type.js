@@ -10,9 +10,8 @@ document.addEventListener("DOMContentLoaded", function () {
     // optionally update when fields update
     // tbd
     document.getElementById('name').addEventListener('change', function (eventData) {
-        eventData.preventDefault();
         let nameOutput = document.getElementById('nameOutput');
-        console.log(eventData);
+        // console.log(eventData);
         nameOutput.innerText = eventData.target.value;
     });
 
@@ -36,7 +35,6 @@ document.addEventListener("DOMContentLoaded", function () {
         let info = document.getElementById('info');
         nameOutput.innerText = formData.name;
         info.innerText = formData.type;
-        console.log(formData)
 
       });
     // Log readiness to console
@@ -62,9 +60,19 @@ document.addEventListener("DOMContentLoaded", function () {
             case 'C':
                 certificate.classList.add('number3');
             break;
+            case 'D':
+                certificate.classList.add('number4');
+            break;
         }
     }
 });
+
+let theDate = new Date().toLocaleDateString('en-us', {weekday:'long'})
+
+
+
+
+
 
 function processForm(form){
 

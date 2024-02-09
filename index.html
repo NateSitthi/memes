@@ -3,19 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Certificate</title>
+    <title>DOM Demo</title>
+
     <script src="type.js"></script>
 </head>
 <body>
-    <form action="" id="userInfo">
-        <input type="text" name="name" id="name" placeholder="Name">
+    <div class="pagewrapper">
 
-        <select name="type" id="type">
-            <option value="Grass">1000 hours</option>
-            <option value="Sarc">Cool and awesome certificate!</option>
-            <option value="C"></option>
-        </select>
-        <button type="submit">Submit</button>
-    </form>
+        <section class="left">
+
+            <div class="certificate " id="certificate">
+                <span id="nameOutput" class="visible">Test Name</span>
+                <span id="info">Test Info</span>
+            </div>
+
+        </section>
+
+        <section class="right">
+
+            <form action="" id="myForm">
+    
+                <input type="text" name="name" id="name" placeholder="Name">
+        
+                <select name="type" id="type">
+                    <option value="Failure to touch Grass">1000</option>
+                    <option value="Not being able to read Sarcasm">Sarcasm</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                </select>
+                <input type="submit" value="Generate">
+        
+            </form>
+        </section>
+
+    </div>    
 </body>
 </html>
