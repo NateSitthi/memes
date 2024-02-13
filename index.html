@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM Demo</title>
-
+    <link rel="stylesheet" href="thing.css">
     <script src="type.js"></script>
 </head>
 <body>
@@ -26,16 +26,26 @@
                 <input type="text" name="name" id="name" placeholder="Name">
         
                 <select name="type" id="type">
-                    <option value="Failure to touch Grass">1000</option>
-                    <option value="Not being able to read Sarcasm">Sarcasm</option>
-                    <option value="C">C</option>
-                    <option value="D">D</option>
+                    <option value="For failure to touch Grass">1000+ Hours on a video game</option>
+                    <option value="For not being able to read Sarcasm">Sarcasm</option>
+                    <option value="For">C</option>
                 </select>
                 <input type="submit" value="Generate">
         
             </form>
         </section>
-
+        <section>
+            <img id="img"src="A4 - 1.png" alt="">
+        </section>
+        <section>
+            <p id="date"></p>
+        </section>
+        <section>
+            <script>
+                const d = new Date();
+                document.getElementById("date").innerHTML = d;
+            </script>
+        </section>
     </div>    
 </body>
 </html>

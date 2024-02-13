@@ -67,7 +67,9 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
-let theDate = new Date().toLocaleDateString('en-us', {weekday:'long'})
+let currentDate = new Date().toLocaleDateString('en-us', {weekday:'long', year:'numeric', month:'numeric', day:'numeric'});
+let dateBox = document.getElementById('theDate');
+currentDate = currentDate;
 
 
 
